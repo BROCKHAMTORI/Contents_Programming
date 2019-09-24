@@ -1,0 +1,52 @@
+<!doctypehtml>
+  <html lang="ko">
+
+  <head>
+    <meta charset="UTF-8">
+    <title>HTML Intro</title>
+  </head>
+
+  <body>
+    <h1>반갑습니다!</h1>
+    <script src="p5.min.js"></script>
+    <script src="p5.dom.js"></script>
+    <script>
+      function setup() {
+        createCanvas(400, 400);
+
+        stroke(255, 255, 255);
+        fill(255, 255, 255);
+        strokeWeight(10);
+        textSize(12);
+        text('DOOR', 85, 100);
+
+        //도형 생성 전 실행 - 밑으로 모두 적용
+        stroke(0, 0, 0);    //변의 색상
+        fill(100, 0, 0);    //도형의 색상
+        strokeWeight(20);   //변의 굵
+
+        /*point(10, 10);
+        point(100, 10);
+        point(80, 20);
+        point(100, 100);
+        point(300, 300);
+
+        line(10, 30, 90, 30);
+        line(10, 40, 90, 40);
+        line(10, 50, 90, 50);*/
+
+        //triangle(80, 9, 80, 100, 100, 100);  //삼각형
+
+        //quad(20, 20, 20, 70, 60, 90, 60, 40);   //사각
+
+        rect(20, 20, 80, 160);   //사각
+        rect(100, 20, 80, 160);
+
+        ellipse(100, 100, 80, 80);  //원
+
+
+      }
+    </script>
+  </body>
+
+  </html>
