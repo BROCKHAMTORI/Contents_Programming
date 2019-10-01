@@ -1,0 +1,63 @@
+<!doctypehtml>
+  <html lang="ko">
+
+  <head>
+    <meta charset="UTF-8">
+    <title>Mondrian</title>
+  </head>
+
+  <body>
+    <script src="p5.min.js"></script>
+    <script src="p5.dom.js"></script>
+    <script>
+      function setup() {
+        createCanvas(400, 500);
+        background(255);
+
+        textSize(50);
+        textStyle(BOLD);
+        textFont('Coves');
+        text('M O N D R I A N', 25, 468);
+
+        strokeWeight(5);
+        //Red box
+        fill(255, 71, 26)
+        rect(50, 2.5, 200, 200);
+        rect(350, 252.5, 47.5, 145);
+
+        //Yellow box
+        fill(255, 214, 51);
+        rect(250, 2.5, 100, 100);
+        rect(2.5, 72.5, 47.5, 325.5);
+
+        //Blue box
+        fill(26, 83, 255);
+        rect(250, 252.5, 100, 145.5);
+
+        //White box
+        fill(255, 255, 255);
+        rect(250, 102.5, 100, 100);
+        rect(250, 202.5, 100, 50);
+        rect(150, 202.5, 100, 50);
+        rect(150, 252.5, 100, 50);
+        rect(2.5, 2.5, 47.5, 70);
+        rect(2.5, 72.5, 47.5, 182.5);
+        rect(350, 2.5, 47.5, 250);
+        rect(50, 302.5, 100, 95.5);
+
+        //Black box & additional line
+        fill(0, 0, 0);
+        rect(50, 202.5, 100, 100);
+        rect(152.5, 302.5, 97.5, 95.5);
+        line(300, 102.5, 300, 200);
+
+        //White line to cover up
+        stroke(255, 255, 255);
+        line(2.5, 0, 2.5, 400);
+        line(397.5, 0, 397.5, 400);
+      }
+
+    </script>
+  </body>
+
+  </html>
